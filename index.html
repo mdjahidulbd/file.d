@@ -1,32 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <title>file.d documentation</title>
-  <link rel="icon" type="image/png" href="/file.d/static/file.d.png" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="A blazing fast tool for building data pipelines: read, process, and output events.">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jahidul Electric & Plumbing</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #e8f0fe;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      box-sizing: border-box;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #0a4d8c;
+      margin-bottom: 15px;
+    }
+    .service-list {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+    }
+    .service-list ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 0;
+    }
+    .form-section {
+      background: #fff;
+      padding: 20px 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: inherit;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      border-color: #0a4d8c;
+      outline: none;
+    }
+    input[type="file"] {
+      padding: 5px 3px;
+      font-size: 13px;
+    }
+    button {
+      background-color: #0a4d8c;
+      color: white;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #083a6f;
+    }
+  </style>
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'file.d',
-      repo: 'https://github.com/ozontech/file.d',
-      loadSidebar: true,
-      loadNavbar: true,
-      subMaxLevel: 2,
-      maxLevel: 1,
-      coverpage: true,
-      auto2top: true,
-      markdown: {
-        gfm: true
-      }
-    }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/docsify-copy-code"></script>
+
+  <h1>Jahidul Electric & Plumbing</h1>
+
+  <div class="service-list">
+    <h2>আমাদের সার্ভিস</h2>
+    <ul>
+      <li>ফ্যান লাগানো – ৩০০ টাকা</li>
+      <li>সুইচ বোর্ড রিপেয়ার – ৩০০ টাকা</li>
+      <li>মোটর ফিটিং – ৬০০ টাকা</li>
+      <li>পানির লাইন রিপেয়ার – ৫০০ টাকা</li>
+      <li>বাথরুম ফিটিং – ৬০০ টাকা</li>
+    </ul>
+  </div>
+
+  <div class="form-section">
+    <h2>বুকিং ফর্ম</h2>
+    <form action="https://formsubmit.co/mdjahidulbd617@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="name">নাম</label>
+      <input type="text" id="name" name="নাম" placeholder="আপনার নাম লিখুন" required />
+
+      <label for="address">ঠিকানা</label>
+      <input type="text" id="address" name="ঠিকানা" placeholder="আপনার ঠিকানা লিখুন" required />
+
+      <label for="phone">ফোন নম্বর</label>
+      <input type="tel" id="phone" name="ফোন নম্বর" placeholder="০১৭xxxxxxxx" pattern="01[3-9][0-9]{8}" title="বাংলাদেশের বৈধ ফোন নম্বর দিন" required />
+
+      <label for="description">কাজের বিবরণ</label>
+      <textarea id="description" name="কাজের বিবরণ" rows="4" placeholder="আপনার কাজের বিস্তারিত লিখুন" required></textarea>
+
+      <label for="photo">ছবি (ঐচ্ছিক)</label>
+      <input type="file" id="photo" name="ছবি" accept="image/*" />
+
+      <button type="submit">সাবমিট করুন</button>
+    </form>
+  </div>
+
 </body>
 </html>
